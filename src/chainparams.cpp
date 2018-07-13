@@ -152,14 +152,14 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 2 * 60; // 401K coin: 2 minutes
+        nTargetTimespan = 1 * 60; // 401K coin: 2 minutes
         nTargetSpacing = 2 * 60;  // 401K coin: 2 minutes
         nMaturity = 15;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 25000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 100;
+        nLastPOWBlock = 10;//100 myfix
         nModifierUpdateBlock = 1; // we use the version 2 for 401K
 
         const char* pszTimestamp = "401KCoin Core Developers Team";
@@ -181,12 +181,10 @@ public:
 	    hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000585522398e3bdf6e91dfe8382fdb3ea5af76c963c4e04f7ec894e18281f"));
         assert(genesis.hashMerkleRoot == uint256("0x70cff1fc2ed81c547c0baeb5f63269739ddef46d38962fee643fdc53aa4ed856"));
-
+//myfix
         // DNS Seeding
-        vSeeds.push_back(CDNSSeedData("1", "167.99.144.178"));
-        vSeeds.push_back(CDNSSeedData("2", "206.189.171.147"));
-        vSeeds.push_back(CDNSSeedData("3", "138.197.159.182"));
-        vSeeds.push_back(CDNSSeedData("4", "178.128.54.249"));
+        vSeeds.push_back(CDNSSeedData("1", "159.65.75.127"));
+        vSeeds.push_back(CDNSSeedData("2", "178.128.190.52"));
 
         // 401K coin addresses start with 'K'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 45);
