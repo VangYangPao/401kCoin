@@ -282,7 +282,7 @@ std::string GetRequiredPaymentsString(int nBlockHeight)
 
 void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, bool fProofOfStake)
 {
-    CBlockIndex* pindexPrev = chainActive.Tip();
+    CBlockIndex* pindexPrev = chainActive.Tip(); 
     if (!pindexPrev) return;
 
     bool hasPayment = true;
