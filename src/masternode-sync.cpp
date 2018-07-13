@@ -22,7 +22,7 @@ CMasternodeSync masternodeSync;
 CMasternodeSync::CMasternodeSync()
 {
     Reset();
-}
+} 
 
 bool CMasternodeSync::IsSynced()
 {
