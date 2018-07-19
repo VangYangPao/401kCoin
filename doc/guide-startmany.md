@@ -90,7 +90,7 @@ Open your QT Wallet and go to console (from the menu select Tools => Debug Conso
 
 Issue the following:
 
-```masternode outputs```
+```masternode outputs``` 
 
 Make note of the hash (which is your collaterla_output) and index.
 
